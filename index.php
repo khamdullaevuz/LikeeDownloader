@@ -40,7 +40,7 @@ function getContent($url, $geturl = false)
     return strval($data);
   }
 
-	if (isset($url)) {
+  if (isset($url)) {
 		$url = trim($url);
 		$resp = getContent($url);
 		//echo "$resp";
@@ -64,12 +64,12 @@ function getContent($url, $geturl = false)
 				'result'=>'Nothing found'
 			];
 		}
-	}else{
+  }else{
 		$array = [
 				'ok'=>false,
 				'result'=>'Please enter url'
 			];
-	}
+  }
 
 	header('Content-type: application/json');
 
